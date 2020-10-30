@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>chat's App</title>
+    <title>Chatur App</title>
+    <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,8 +11,10 @@
   </head>
 
   <body>
-    new app
-    <%= yield %>
-
+    <div class="ui container main-container">
+      <%= render 'layouts/nav' %>
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
